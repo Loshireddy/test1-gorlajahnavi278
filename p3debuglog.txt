@@ -1,0 +1,51 @@
+set args is it ok 
+Reading symbols from a.out...
+(gdb) run
+Starting program: /home/a.out is it ok 
+
+Breakpoint 1, main () at main.c:35
+35          c=input();
+(gdb) next
+
+Breakpoint 2, input () at main.c:12
+12      {
+(gdb) 
+(gdb) next
+14        printf("Enter radius, height, length of a camel\n");
+(gdb) next
+Enter radius, height, length of a camel
+15        scanf("%f%f%f",&c.radius, &c.height, &c.length);
+(gdb) step
+__isoc99_scanf (format=0x555555556030 "%f%f%f") at isoc99_scanf.c:25
+25      isoc99_scanf.c: No such file or directory.
+(gdb) step
+29      in isoc99_scanf.c
+(gdb) next
+30      in isoc99_scanf.c
+(gdb) next
+
+set args is it ok 
+Reading symbols from a.out...
+(gdb) run
+Starting program: /home/a.out is it ok 
+
+Breakpoint 1, main () at main.c:35
+35          c=input();
+(gdb) next
+
+Breakpoint 2, input () at main.c:12
+12      {
+(gdb) 
+(gdb) next
+14        printf("Enter radius, height, length of a camel\n");
+(gdb) next
+Enter radius, height, length of a camel
+15        scanf("%f%f%f",&c.radius, &c.height, &c.length);
+(gdb) step
+__isoc99_scanf (format=0x555555556030 "%f%f%f") at isoc99_scanf.c:25
+25      isoc99_scanf.c: No such file or directory.
+(gdb) step
+29      in isoc99_scanf.c
+(gdb) next
+30      in isoc99_scanf.c
+(gdb) next
